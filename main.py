@@ -81,3 +81,79 @@ print(totalText)
 #f-string
 totalText = f"Hoşgeldiniz {userName}"
 print(totalText)
+
+
+
+print("----------------------------------------")
+#Dizi/array
+sayilar = [100,200,300,"Merhaba"]
+
+print(sayilar)
+#programcılar saymaya 0'dan başlar 
+#index- indis => baslangıc değeri 0 
+print(sayilar[0])
+print(sayilar[3])
+print(sayilar[-1]) #dizinin son indexini verir
+
+sayilar.append(100) #listenin sonuna eleman ekler
+print(sayilar)
+
+sayilar.pop(2) #default olarak son indeximi siler
+print(sayilar)
+
+sayilar.remove(100) #pop'ın aksine indexe göre değil değere göre siler
+print(sayilar)
+
+sayilaraEkleme =  [1,2,3]
+sayilar.extend(sayilaraEkleme) 
+print(sayilar)
+
+sayilar.append(sayilaraEkleme)
+print(sayilar)
+print(sayilar[6][2])
+
+sayilar.clear() #dizinin içini boşaltan bi fonk
+print(sayilar)
+
+
+#karar yapıları
+ortalamaNot = input("Lütfen ortalamanızı giriniz.")
+#input => kullanıcıdan string bir değer alır
+#string => int 
+
+#type conversion
+print(type(ortalamaNot))
+ortalamNotAsInteger = int(ortalamaNot)
+print(type(ortalamNotAsInteger))
+
+if ortalamNotAsInteger >50 :
+    print("Bravo")
+#else if => elif 
+elif ortalamNotAsInteger >40:
+    print("Başarısız")
+elif ortalamNotAsInteger >30:
+    print("Başarısız")
+else:
+    print("Kaldınız")
+    print("if blogundan bagımsız çalışıcak olan kısım")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
